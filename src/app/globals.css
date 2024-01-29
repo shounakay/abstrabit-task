@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "Apercu";
+  src: url('/public/fonts/apercu_regular_pro.otf') format("truetype");
+}
