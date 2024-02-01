@@ -24,7 +24,7 @@ export const InfoCard = ({
   secondaryBtn,
 }: InfoCardProps) => {
   return (
-    <div className="flex flex-col gap-6 px-4 py-5 w-[400px] text-neutral-800 bg-white border-b-[0.5px] border-neutral-400">
+    <div className="flex flex-col gap-6 px-4 py-5 xl:w-[320px] 2xl:w-[400px] text-neutral-800 bg-white border-b-[0.5px] border-neutral-400">
       <h3 className="font-semibold text-sm">{cardName}</h3>
       <div className="flex items-center gap-4">
         <div className="flex flex-col gap-2">

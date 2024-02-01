@@ -1,7 +1,8 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React, { useCallback, useState } from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import { Cell, Pie, PieChart } from "recharts";
 
 const data = [
   { name: "Group A", value: 400 },
@@ -9,6 +10,20 @@ const data = [
   { name: "Group C", value: 300 },
   { name: "Group D", value: 200 },
 ];
+
+// const PieChart = dynamic(
+//   () => import("recharts").then((module) => module.PieChart),
+//   { ssr: false }
+// );
+
+// const Pie = dynamic(() => import("recharts").then((module) => module.Pie), {
+//   ssr: false,
+//   loading: <div>Loading</div>,
+// });
+
+// const Cell = dynamic(() => import("recharts").then((module) => module.Cell), {
+//   ssr: false,
+// });
 
 const COLORS = ["#6c63ff", "#59CBD3", "#B9C606", "#FA9D17"];
 

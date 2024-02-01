@@ -22,7 +22,7 @@ export const BankCard = ({
 }) => {
   return (
     <section
-      className={`rounded-sm ${bgColor} ring-4 ring-white px-3 py-3 flex flex-col gap-3 w-[410px] sm:max-md:w-[300px]`}
+      className={`rounded-sm ${bgColor} ring-4 ring-white px-3 py-3 flex flex-col gap-3 md:w-[320px] lg:w-[400px]`}
     >
       <div className="flex items-center gap-3">
         <Image
@@ -40,7 +40,7 @@ export const BankCard = ({
           {checkList.map((check) => (
             <div
               key={check}
-              className={`flex text-xs items-center gap-1 ${secondaryBg} px-2 py-2 rounded-md min-w-32`}
+              className={`flex sm:text-[10px] lg:text-xs items-center gap-1 ${secondaryBg} px-2 py-2 rounded-md min-w-32`}
             >
               {" "}
               <Image src={checkImg} width={14} height={12} alt="check" />

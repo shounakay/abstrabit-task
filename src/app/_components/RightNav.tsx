@@ -16,7 +16,7 @@ export const RightNav = () => {
   const [isSupportOpen, setIsSupportOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   return (
-    <div className="md:flex hidden items-center gap-12 text-neutral-950 font-semibold text-sm">
+    <div className="lg:flex hidden items-center gap-12 text-neutral-950 font-semibold text-sm">
       <Link href="#">Dashboard</Link>
       <Link href="#">FAQs</Link>
       <Link
