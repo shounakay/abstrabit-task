@@ -4,7 +4,7 @@ import { FaqCard } from "./FaqCard";
 
 export const Faq = () => {
   return (
-    <section className="flex flex-col w-96 md:w-[600px] lg:w-[800px] 2xl:w-full gap-4">
+    <section className="flex flex-col xss:w-80 xs:w-[440px] md:w-[600px] lg:w-[800px] 2xl:w-full gap-4">
       <div className="flex justify-between items-center text-neutral-800">
         <div className="flex flex-col gap-2">
           <h4 className="font-bold text-lg">Get Answer</h4>

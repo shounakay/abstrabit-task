@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="font-apercu h-full">
-        <Nav />
-        {children}
+        <Nav>{children}</Nav>
       </body>
     </html>
   );

@@ -15,6 +15,7 @@ const config: Config = {
       },
       screens: {
         xs: "480px",
+        xss: "380px",
       },
       colors: {
         "cerulean-blue": {

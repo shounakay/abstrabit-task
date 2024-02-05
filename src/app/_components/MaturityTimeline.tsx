@@ -10,16 +10,16 @@ export const MaturityTimeline = () => {
         return (
           <div
             key={i}
-            className="flex flex-col w-28 xs:w-[150px] sm:w-[200px] lg:w-[264px] gap-3"
+            className="flex flex-col xss:w-[90px] xs:w-[150px] sm:w-[200px] lg:w-[264px] gap-3"
           >
-            <h3 className="text-center text-xs md:text-sm text-neutral-400 font-medium">
+            <h3 className="text-center xss:text-[6px] text-xs md:text-sm text-neutral-400 font-medium">
               {i == 0 ? year : (Number(year) + i).toString()}
             </h3>
             <div className="flex items-center">
               {months.map((month, idx) => (
                 <div
                   key={idx}
-                  className={`h-44 w-6 ${
+                  className={`h-44 xss:w-4 xs:w-6 ${
                     i === 0
                       ? " bg-blue-marguerite-200"
                       : i === 1
@@ -34,15 +34,15 @@ export const MaturityTimeline = () => {
           </div>
         );
       })}
-      <div className=" absolute w-16 xs:w-24 sm:w-28 lg:w-32 text-[8px] md:text-xs rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-20">
+      <div className=" absolute xss:w-14 xs:w-24 sm:w-28 lg:w-32 text-[8px] md:text-xs rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-20">
         <h3>Utkarsh FD 1 </h3>
-        <div className=" absolute w-36 xs:w-60 sm:w-72 lg:w-80 text-[8px] md:text-xs  rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-8">
+        <div className=" absolute xss:w-36 xs:w-60 sm:w-72 lg:w-80 text-[8px] md:text-xs  rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-8">
           Shriram FD Plan 2{" "}
         </div>
         <div className=" absolute w-28 xs:w-52 sm:w-64 lg:w-72 text-[8px] md:text-xs rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-16 left-6">
           Bajaj Finserve FD 1{" "}
         </div>
-        <div className=" absolute w-52 xs:w-80 sm:w-96 lg:w-[580px] text-[8px] md:text-xs rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-24 left-12">
+        <div className=" absolute xss:w-44 xs:w-80 sm:w-96 lg:w-[580px] text-[8px] md:text-xs rounded-lg bg-[#3B39D9] text-center text-neutral-200 top-24 left-12">
           Mahindra FD Plan 2{" "}
         </div>
       </div>

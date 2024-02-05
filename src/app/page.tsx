@@ -8,7 +8,7 @@ import { MaturityTimeline } from "./_components/MaturityTimeline";
 export default function Home() {
   return (
     <main className="flex min-h-full flex-col px-14 xl:px-20 2xl:px-36 gap-5 py-8 bg-black-haze-50">
-      <div className="md:self-center 2xl:self-start">
+      <div className="self-start">
         <h5 className="text-neutral-800 font-2xl font-semibold">
           Welcome, Shounak Chavan
         </h5>
